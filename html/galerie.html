@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Reference</title>
+    <link rel="icon" type="image/x-icon" href="../img/web-ref-1.ico" >
+    <!--Lien Feuille de style externe-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!--Lien Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--Style Interne-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        html{
+            background-color: rgb(236, 232, 232);
+        }
+        body{
+            font-family: 'Lato', sans-serif;
+            width: 900px;
+            height: 100%;
+            margin: 0 auto;
+            background-color: #fff
+        }
+        #title h1 a{
+            list-style: none;
+            color: #f54545 !important;
+        }
+    </style>
+</head>
+<body>
+    <!--section header-->
+    <header class="header-items">
+        <div id="logo"><span><a href="index.html"><img class="logo-img" src="../img/web-news.png" alt="logo"></a></span></div>
+        <div id="title">
+          <h1><a href="../html/index.html">Web Reference</a></h1>
+        </div>
+    </header>
+    <!--navbar-->
+    <nav class="menu">
+        <ul>
+            <li><i class="fas fa-home"></i><a href="/html/index.html" class="home">Home</a></li>
+            <li><a href="/html/about.html">About us</a></li>
+            <li><a href="/html/articles.html">Articles</a></li>
+            <li><a href="/html/portfolio.html">Portfolio</a>
+                <ul class="dropdown">
+                    <li><a href="/html/galerie.html">Galerie photos</a></li>
+                    <li><a href="/html/videos.html">Videos</a></li>
+                </ul>
+            </li>
+            <li><a href="/html/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!--section main container-->
+    <section>
+        <article class="content">
+            <h2>Galerie</h2>
+            <h4 id="light-box">Small Lightbox</h4>
+            <div class="row">
+                <div class="column">
+                  <img src="../img/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                  <img src="../img/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="Snow">
+                </div>
+                <div class="column">
+                  <img src="../img/mobile.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="Smartphone">
+                </div>
+                <div class="column">
+                  <img src="../img/webdev.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"  alt="Webdev">
+                </div>
+              </div>
+              
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="../img/img_nature.jpg" style="width:100%; height: 100%;" alt="Nature and sunrise">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="../img/img_snow.jpg" style="width:100% ;height: 100%;" alt="Snow">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="../img/mobile.jpg" style="width:100%;height:100%;" alt="Smartphone">
+                  </div>
+                  
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="../img/webdev.jpg" style="width:100%; height: 100%;" alt="Webdev">
+                  </div>
+                  
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+              
+              
+                  <div class="column">
+                    <img class="demo cursor" src="../img/img_nature.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="../img/img_snow.jpg"  style="width:100%" onclick="currentSlide(2)" alt="Snow">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="../img/mobile.jpg" style="width:100%" onclick="currentSlide(3)" alt="Smartphone">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="../img/webdev.jpg" style="width:100%" onclick="currentSlide(4)" alt="Webdev">
+                  </div>
+                </div>
+              </div>
+              <!---END LIGHTBOX-->
+              <div id="table-box">
+                <h4>Quelques sites utiles pour web developer</h4>
+                <table>
+                  <tr>
+                    <th>Tableau récapitulatif</th>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.pexels.com/fr-fr/" target="_blank">pexels.com</a></td>
+                    <td >Photos, videos gratuites</td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://fr.freepik.com/" target="_blank">freepik.com</a></td>
+                    <td>images, logos, illustrations gratuites</td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.flaticon.com/" target="_blank">flaticon.com</a></td>
+                    <td>Icones, logos (svg,png,jpeg) </td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://flatuicolors.com/" target="_blank">flatuicolors.com</a></td>
+                    <td>Palettes de couleurs </td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://htmlcheatsheet.com/" target="_blank">htmlcheatsheet.com</a></td>
+                    <td>Références HTML,CSS, JAVASCRIPT</td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.w3schools.com/" target="_blank">w3schools.com</a></td>
+                    <td>Tutoriels, références langages de programmation</td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.w3.org/" target="_blank">w3.org</a></td>
+                    <td>Tutoriels, références langages de programmation</td>
+                  </tr>
+                </table>
+              </div>              
+        </article>
+    <!--sidebar section-->
+        <aside id="sidebar">
+            <div class="search">
+                <input type="text" class="search-input" placeholder="Recherche..."><i class="fa fa-search"></i>
+            </div>
+            <div class="frm">
+                <form action="#">
+                        <div>
+                            <label>Nom Utilisateur</label>
+                            <input type="text" name="user" placeholder="Votre nom...">
+                        </div>
+                        <div>
+                            <label>Mot de passe</label>
+                            <input type="password" name="password">
+                        </div>
+                        <button type="button">Login<i class="fas fa-arrow-circle-right"></i></button>
+                </form>
+            </div>
+            <div class="article-recent">
+                <h4>Articles récents</h4>
+                <a href="articles.html#article1">Technologie</a>
+                <a href="articles.html#article2">Smartphone : Impacts?</a>
+                <a href="articles.html#article3">Lancer sa Start-up?</a>
+            </div>
+            <div id="lien">
+                <h4>Liens utiles</h4>
+                <a href="#">Lien 1</a>
+                <a href="#">Lien 2</a>
+                <a href="#">Lien 3</a>
+            </div>
+        </aside>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2019-2020 </p>
+    </footer>
+    <!--Script Javascript-->
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Reference</title>
+    <link rel="icon" type="image/x-icon" href="../img/web-ref-1.ico" >
+    <!--Lien Feuille de style externe-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!--Lien Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--Style Interne-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        html{
+            background-color: rgb(236, 232, 232);
+        }
+        body{
+            font-family: 'Lato', sans-serif;
+            width: 900px;
+            height: 100%;
+            margin: 0 auto;
+            background-color: #fff
+        }
+        #title h1 a{
+            list-style: none;
+            color: #f54545 !important;
+        }
+    </style>
+</head>
+<body>
+    <!--section header-->
+    <header class="header-items">
+        <div id="logo"><span><a href="/html/index.html"><img class="logo-img" src="../img/web-news.png" alt="logo"></a></span></div>
+        <div id="title">
+            <h1><a href="../html/index.html">Web Reference</a></h1>
+        </div>
+    </header>
+    <!--navbar-->
+    <nav class="menu">
+        <ul>
+            <li><i class="fas fa-home"></i><a href="/html/index.html" class="home">Home</a></li>
+            <li><a href="/html/about.html">About us</a></li>
+            <li><a href="/html/articles.html">Articles</a></li>
+            <li><a href="/html/portfolio.html">Portfolio</a>
+                <ul class="dropdown">
+                    <li><a href="/html/galerie.html">Galerie photos</a></li>
+                    <li><a href="/html/videos.html">Videos</a></li>
+                </ul>
+            </li>
+            <li><a href="/html/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!--section main container-->
+    <section>
+        <article class="content">
+            <h2>Vidéos</h2>
+            <div id="iframe-text">
+                <h4>Tendances Web Desgin</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro corrupti doloremque saepe voluptatem, tempore atque maxime ea, facilis ipsa earum blanditiis voluptas deserunt eveniet dignissimos quas harum! Tempore, repellendus nobis.
+                </p>
+            </div>
+            <div style="width: 560px; height: 315px;" id="iframe-box">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6DdUkxajANs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="iframe-text">
+                <h4>Tendances Web Desgin</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro corrupti doloremque saepe voluptatem, tempore atque maxime ea, facilis ipsa earum blanditiis voluptas deserunt eveniet dignissimos quas harum! Tempore, repellendus nobis.
+                </p>
+            </div>
+            <div style="width: 560px; height: 315px;" id="iframe-box">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LadpP5XR1aM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="iframe-text">
+                <h4>Tendances Web Development</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro corrupti doloremque saepe voluptatem, tempore atque maxime ea, facilis ipsa earum blanditiis voluptas deserunt eveniet dignissimos quas harum! Tempore, repellendus nobis.
+                </p>
+            </div>
+            <div style="width: 560px; height: 315px;" id="iframe-box">
+                <video width="560px" height="315px" controls="controls">
+                    <source src="../video/Web Design Promotional Video.mp4" type="video/mp4">
+                    <source src="../video/Web Design Promotional Video.ogg" type="video/ogg">
+                    <source src="../video/Web-Design-Promotional-Video.webm" type="video/webm">
+                </video>
+            </div>
+        </article>
+        <aside id="sidebar">
+            <div class="search">
+                <input type="text" class="search-input" placeholder="Recherche..."><i class="fa fa-search"></i>
+            </div>
+            <div class="frm">
+                <form action="#">
+                        <div>
+                            <label>Nom Utilisateur</label>
+                            <input type="text" name="user" placeholder="Votre nom...">
+                        </div>
+                        <div>
+                            <label>Mot de passe</label>
+                            <input type="password" name="password">
+                        </div>
+                        <button type="button">Login<i class="fas fa-arrow-circle-right"></i></button>
+                </form>
+            </div>
+            <div class="article-recent">
+                <h4>Articles récents</h4>
+                <a href="articles.html#article1">Technologie</a>
+                <a href="articles.html#article2">Smartphone : Impacts?</a>
+                <a href="articles.html#article3">Lancer sa Start-up?</a>
+            </div>
+            <div id="lien">
+                <h4>Liens utiles</h4>
+                <a href="#">Lien 1</a>
+                <a href="#">Lien 2</a>
+                <a href="#">Lien 3</a>
+            </div>
+        </aside>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2019-2020 </p>
+    </footer>
+    <!--Script Javascript-->
+    <script src="/js/script.js"></script>
+</body>
+</html>
